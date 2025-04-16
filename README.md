@@ -1,4 +1,5 @@
 # Motion Alarm System 🚨
+#### A compact real-time embedded alarm system with motion detection and UART control.
 
 A real-time motion detection system built in Arduino (.ino) using:
 
@@ -25,6 +26,7 @@ A real-time motion detection system built in Arduino (.ino) using:
 ## 📐 Circuit Diagram
 
 ![Alt text](motion-alarm-system.png)
+The schematic illustrates how the PIR sensor, button, LED, and buzzer are connected to the Arduino Uno.
 
 ## 🧰 Components Used
 
