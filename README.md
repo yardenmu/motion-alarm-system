@@ -38,7 +38,9 @@ A real-time motion detection system built in Arduino (.ino) using:
 - Jumper wires
 
 
-## Demo
+## 🎬 Demo Video
+[Watch the demo](https://drive.google.com/file/d/1Wbuk8ar1bGEfH5gAFu7NGFreaZfcMI0J/view?usp=sharing)
+
 
 
 ![Platform](https://img.shields.io/badge/platform-Arduino-blue)
