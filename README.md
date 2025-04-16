@@ -13,7 +13,7 @@ A real-time motion detection system built in Arduino (.ino) using:
 - Hardware-level interrupt handling
 - Timer-based periodic UART message (every 4 seconds)
 - Remote alarm control via serial input
-- Clean and modular code written in C-style Arduino
+- Clean and modular code written in **C-style** Arduino
 
 ## Run the Project
 
@@ -24,4 +24,3 @@ A real-time motion detection system built in Arduino (.ino) using:
 
 ## Demo
 
-[Add link to TinkerCAD if you want]
