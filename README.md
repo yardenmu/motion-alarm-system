@@ -22,5 +22,25 @@ A real-time motion detection system built in Arduino (.ino) using:
 3. Upload and open Serial Monitor (9600 baud)
 4. Simulate motion and try sending the `SILENCE` command!
 
+## 📐 Circuit Diagram
+
+![Alt text](motion-alarm-system.png)
+
+## 🧰 Components Used
+
+- 1 × Arduino Uno
+- 1 × PIR Motion Sensor
+- 1 × Pushbutton
+- 1 × Buzzer (active)
+- 1 × LED (any color)
+- 1 × 220Ω Resistor (for LED)
+- 1 × 10kΩ Resistor (for pushbutton pull-down)
+- Jumper wires
+
+
 ## Demo
 
+
+![Platform](https://img.shields.io/badge/platform-Arduino-blue)
+![Language](https://img.shields.io/badge/language-C%20%7C%20Arduino-brightgreen)
+![Status](https://img.shields.io/badge/status-Complete-success)
