@@ -12,25 +12,24 @@ void setup()
 {
   cli();
   
-  //define led as output
-  DDRB |= (1 << DDB1);
+  // Set LED and Buzzer pins as output
+  DDRB |= (1 << DDB1) | (1 << DDB0);
   
-  //define buzzer as output
-  DDRB |= (1 << DDB0);
-  
-  //define PIR, button as input
+  // Set PIR and button pins as input
   DDRD &= ~((1 << DDD2) | (1 << DDD3));
   
+  // Configure external interrupts for rising edge detection
   SET_INT0_RISING_EDGE;
   ENABLE_INT0;
   SET_INT1_RISING_EDGE;
   ENABLE_INT1;
   
-  TCCR1A = 0;                              // Clear Timer1 Control Register A
-  TCCR1B = (1 << WGM12);                  // Set CTC mode
-  OCR1A = 62496;                         // Compare value for 4 seconds
-  TIMSK1 |= (1 << OCIE1A);              // Enable Timer1 Compare Match A interrupt
-  TCCR1B |= (1 << CS12) | (1 << CS10); // Start Timer1 with prescaler 1024
+  // Setup Timer1 in CTC mode to trigger every 4 seconds
+  TCCR1A = 0;                              
+  TCCR1B = (1 << WGM12);                  
+  OCR1A = 62496;                         
+  TIMSK1 |= (1 << OCIE1A);              
+  TCCR1B |= (1 << CS12) | (1 << CS10); 
   
   Serial.begin(9600); // Initialize UART
 
